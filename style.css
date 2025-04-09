@@ -1,0 +1,26 @@
+/* Custom styles that complement Tailwind */
+body {
+    min-height: 100vh;
+}
+
+#cart-modal {
+    transition: opacity 0.3s ease;
+}
+
+/* Animation for cart notification */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; transform: translateY(0); }
+    to { opacity: 0; transform: translateY(-20px); }
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+    #products {
+        grid-template-columns: 1fr;
+    }
+}
